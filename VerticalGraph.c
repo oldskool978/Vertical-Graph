@@ -36,12 +36,7 @@ int main()
     while(BigNum > 0)
     {
         for (int i = 0; i < WordCount; i++)
-        {
-            if (Tracker[i] < BigNum)
-                printf(" ");
-            else 
-                printf("#");
-        }
+            Tracker[i] < BigNum ? printf(" ") : printf("#");
         printf("\n");
         BigNum--;
     }
